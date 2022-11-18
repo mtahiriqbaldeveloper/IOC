@@ -13,6 +13,17 @@ public class Blog {
 
     private Comment comment;
 
+    public Comment getComment() {
+        return comment;
+    }
+
+    public void setComment(Comment comment) {
+        this.comment = comment;
+    }
+
+    public Blog() {
+    }
+
     public String getTitle() {
         return title;
     }
@@ -44,4 +55,6 @@ public class Blog {
     public void setPublishedDate(Date publishedDate) {
         this.publishedDate = publishedDate;
     }
+
+
 }

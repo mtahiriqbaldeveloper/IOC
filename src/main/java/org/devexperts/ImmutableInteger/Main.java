@@ -8,8 +8,8 @@ public class Main {
         Runnable r = () -> mutableInteger.setValue(12);
         Runnable r3 = () -> mutableInteger.setValue(13);
 
-        Runnable r2 = () -> mutableInteger.getValue();
-        Runnable r4 = () -> mutableInteger.getValue();
+        Runnable r2 = mutableInteger::getValue;
+        Runnable r4 = mutableInteger::getValue;
 
         Thread t3 = new Thread(r3);
         t3.start();
